@@ -3,7 +3,7 @@
 %define srcname js_of_ocaml
 %define versionbase 1.0.4
 #define releasecandidate rc5
-%define release 1
+%define release 2
 #define versioncomplete %{versionbase}-%{releasecandidate}
 %define versioncomplete %{versionbase}
 
