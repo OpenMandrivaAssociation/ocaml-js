@@ -20,7 +20,7 @@ Source0:	http://ocsigen.org/download/%{srcname}-%{version}.tar.gz
 # Also changes install from $(BINDIR) to $(DESTDIR)$(BINDIR)
 Patch0:		Makefile-bindir.patch
 BuildRequires:  ocaml >= 3.10.0
-BuildRequires:  ocaml-findlib
+BuildRequires:  ocaml-findlib-devel
 BuildRequires:	ocaml-lwt
 BuildRequires:  ocaml-doc
 
