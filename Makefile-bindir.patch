@@ -1,0 +1,28 @@
+--- js_of_ocaml-1.0.4/Makefile.conf.orig	2011-09-15 15:59:28.003670456 +0200
++++ js_of_ocaml-1.0.4/Makefile.conf	2011-09-15 15:59:38.123893811 +0200
+@@ -1,6 +1,6 @@
+ 
+ # Where binaries are installed:
+-BINDIR := /usr/local/bin
++BINDIR := /usr/bin
+ 
+ ####
+ 
+--- js_of_ocaml-1.0.4/Makefile	2011-09-15 16:05:09.621187262 +0200
++++ js_of_ocaml-1.0.4/Makefile	2011-09-15 16:04:54.900864222 +0200
+@@ -32,12 +32,12 @@
+ VERSION := $(shell head -n 1 VERSION)
+ install:
+ 	ocamlfind install -patch-version ${VERSION} $(LIBRARY) lib/META $(INTF) $(IMPL) $(NATIMPL) $(OTHERS)
+-	install -d -m 755 $(BINDIR)
+-	install $(BIN) $(BINDIR)
++	install -d -m 755 $(DESTDIR)$(BINDIR)
++	install $(BIN) $(DESTDIR)$(BINDIR)
+ 
+ uninstall:
+ 	ocamlfind remove $(LIBRARY)
+-	rm -f $(BINDIR)/$(COMPILER)
++	rm -f $(DESTDIR)$(BINDIR)/$(COMPILER)
+ 
+ reinstall: uninstall install
+ 
