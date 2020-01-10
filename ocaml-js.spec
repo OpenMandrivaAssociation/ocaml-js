@@ -63,7 +63,7 @@ developing applications that use %{name}.
 
 %prep
 %setup -q -n %{srcname}-%{versioncomplete}
-%apply_patches
+%autopatch -p1
 
 %build
 make
