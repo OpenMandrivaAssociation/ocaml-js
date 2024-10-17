@@ -14,7 +14,7 @@ Summary:        OCaml to JavaScript bytecode compiler
 Group:          Development/C
 License:        GPLv2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-URL:            http://ocsigen.org/js_of_ocaml/manual/
+URL:            https://ocsigen.org/js_of_ocaml/manual/
 Source0:	http://ocsigen.org/download/%{srcname}-%{version}.tar.gz
 # As of 1.0.4, need to change Makefile.conf to set BINDIR to /usr/bin instead of /usr/local/bin
 # Also changes install from $(BINDIR) to $(DESTDIR)$(BINDIR)
